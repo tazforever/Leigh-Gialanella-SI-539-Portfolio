@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Leigh Gialanella</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+
+		<p><img src = "static/logo.png" alt = "University of Michigan"><h1>Leigh Gialanella</h1></p>
+
+			<!-- p><h1>Leigh Gialanella</h1></p>
+			<p><img src="/static/logo.png" alt="First Slide"></p>
+			<p></p>
+			<p></p> -->
+		<div class="Collapsed">
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    		<div class="container">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                	<span class="sr-only">Toggle navigation</span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+            	</button>
+         	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            	<ul class="nav navbar-nav">
+                	<li><a href="index.html">Home</a></li>
+                	<li><a href="resume.html">Resume</a></li>
+                	<li><a href="projects.html">Featured Projects</a></li>
+                	<li><a href="photos.html">Experience</a></li>
+                	<li><a href="contact.html">Contact Me</a></li>
+            	</ul>
+        	</div>
+    		</div>
+		</nav>
+		</div>
+		<div class="pill">
+		<nav>
+			<ul class="nav nav-pills nav-justified" id="navlist">
+			<li><a href = "index.html" id="homenav">Home</a></li>
+			<li><a href = "resume.html" id="resumenav">Resume</a></li>
+			<li><a href = "projects.html"id="projectsnav">Featured Projects</a></li>
+			<li><a href = "photos.html" id="photosnav">Experiences</a></li>
+			<li><a href = "contact.html" id="contactnav">Contact Me</a></li>
+			</ul>
+			
+			
+		</nav>
+		</div>
+	</header>
+	{% block content %}
+	I should never see this content.  It should be replaced. 
+	{% endblock %}
+
+	<footer> 
+		<p>Copyright &copy; Leigh Gialanella. <i class="fa fa-linkedin-square" style="color: #007bb5"></i><i class="fa fa-facebook-official" style="color:#3b5998"></i></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+</body>
+</html>
