@@ -34,12 +34,16 @@ header {
 	margin-top: -20px;
 	background-image:url("http://ecx.images-amazon.com/images/I/91zRT51ws5L._SX450_.jpg");}
 
+a.current{
+  text-transform:uppercase;
+  font-weight:bold;
+}
 
-body#Home a#homenav, body#resume a#resumenav, body#project a#projectsnav, body#photo a#photosnav, body#contact a#contactnav{
+/*body#Home a#homenav, body#resume a#resumenav, body#project a#projectsnav, body#photo a#photosnav, body#contact a#contactnav{
 text-transform: uppercase;
 font-weight: bold;
 }
-
+*/
 .text {
   text-align: center;
   color: white;
@@ -183,4 +187,17 @@ footer {
 	background-image:url("http://ecx.images-amazon.com/images/I/91zRT51ws5L._SX450_.jpg");
 	color:white;
   font-family: "Copperplate Gothic";
+}
+
+.carousel{
+    background: #2f4357;
+    width:75%;
+    margin: 0 auto;
+}
+
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+    margin: 20px;
 }
