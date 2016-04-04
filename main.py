@@ -23,3 +23,28 @@ class ProjectsHandler(webapp2.RequestHandler):
     	template = JINJA_ENVIRONMENT.get_template('templates/projects.html')
     	self.response.write(template.render({'title' : 'Projects'}))
 
+class PhotosHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/photos.html')
+        self.response.write(template.render({'title' : 'Photos'}))
+
+
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+        self.response.write(template.render({'title' : 'Contact'}))
+
+
+app = webapp2.WSGIApplication([
+    ('/', IndexHandler),
+    ('/index.html', IndexHandler),
+    ('/resume.html', ResumeHandler),
+    ('/projects.html', ProjectsHandler),
+    ('/photos.html', PhotosHandler),
+    ('/contact.html', ContactHandler),
+], debug=True)
+
+
+
+
+
